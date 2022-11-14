@@ -28,6 +28,10 @@ CREATE TABLE IF NOT EXISTS orders
 );
 
 
+ALTER TABLE orders
+ADD CONSTRAINT FK_orders_customers FOREIGN KEY(customer_id) REFERENCES customers(customer_id);
+
+
 CREATE TABLE IF NOT EXISTS shops
 (
     shop_id serial PRIMARY KEY,
