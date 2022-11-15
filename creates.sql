@@ -63,7 +63,6 @@ CREATE TABLE IF NOT EXISTS books
     order_id int default NULL REFERENCES orders(order_id) ON DELETE RESTRICT,
     publisher_id int NOT NULL REFERENCES publishers(publisher_id) ON DELETE SET NULL,
     supplier_id int NOT NULL REFERENCES suppliers(supplier_id) ON DELETE SET NULL,
-    shop_id int NOT NULL REFERENCES  shops(shop_id) ON DELETE SET NULL
 );
 
 
@@ -143,3 +142,7 @@ CREATE TABLE IF NOT EXISTS logging
     log_message varchar(255) NOT NULL,
     user_id int REFERENCES users(user_id) ON DELETE SET NULL
 );
+
+
+ALTER TABLE IF EXISTS public.logging
+    ALTER COLUMN user_id SET NOT NULL;
