@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS books
     price decimal, 
     order_id int default NULL REFERENCES orders(order_id) ON DELETE RESTRICT,
     publisher_id int NOT NULL REFERENCES publishers(publisher_id) ON DELETE SET NULL,
-    supplier_id int NOT NULL REFERENCES suppliers(supplier_id) ON DELETE SET NULL,
+    supplier_id int NOT NULL REFERENCES suppliers(supplier_id) ON DELETE SET NULL
 );
 
 
