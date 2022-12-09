@@ -67,14 +67,14 @@ INSERT INTO customers(user_id, address) VALUES
 INSERT INTO suppliers(org_name, address, email, phone) VALUES
 ('Аспект-Бел', 'г. Минск ул. Сырокомли 7, ком 311', 'viarenich.j@uchitel.by', '+375293140140'),
 ('Букинист', 'г. Могилев, Пушкинский пр-т, 38', 'bookinist@mail.ru', '+375293140141'),
-('Supplier 3', 'г. Минск, ул.Дзержинского 45', 'supplier@mail.ru', '+375293140142')
+('Supplier 3', 'г. Минск, ул.Дзержинского 45', 'supplier@mail.ru', '+375293140142');
 
 
 INSERT INTO publishers(org_name, address, country, email, phone) VALUES
 ('Аверсэв', 'г. Минск, ул. Олешева, д. 1, офис 309', 'Беларусь', 'info@aversev.by', '+375336343910'),
 ('Адукацыя і выхаванне', 'г. Минск, ул. Будённого, 21 ', 'Беларусь', 'aiv@aiv.by', '+375172579149'),
 ('Беларусь', 'г. Минск,  проспект Победителей, д.11 этаж 7, офис 702', 'Беларусь', 'belarus@izdatelstvo.by', '+375172038742'),
-('Вышэйшая школа', 'г.Минск, ул. Коржа, 11а', 'Беларусь', 'sekretar@vshph.com', '+375172037008')
+('Вышэйшая школа', 'г.Минск, ул. Коржа, 11а', 'Беларусь', 'sekretar@vshph.com', '+375172037008');
 
 
 INSERT INTO shops(address, phone) VALUES
